@@ -178,11 +178,34 @@ main {
 
     display: flex;
     flex-direction: column;
+    gap: 10px;
 
     justify-content: center;
     align-items: center;
 
     text-align: center;
+}
+
+.missao{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    
+}
+
+.missao ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+ul li::before{
+    content: "→ ";
+
+}
+strong{
+    
 }
 
 
@@ -209,6 +232,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 
     padding: 30px;
 
@@ -226,7 +251,7 @@ footer {
 
 /*---IPAD---*/
 
-@media (min-width: 769px) {
+@media (max-width: 1024px) {
 
     nav {
         padding: 15px 4%;
