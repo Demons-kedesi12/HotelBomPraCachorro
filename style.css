@@ -14,6 +14,8 @@ body {
     color: #294442;
 }
 
+/* PÁGINA INICIO E SOBRE E GERAIS */
+
 /*HEADER*/
 
 header {
@@ -191,21 +193,57 @@ main {
     flex-direction: column;
     padding: 30px;
     gap: 20px;
-    
+    font-size: larger;
 }
 
 .missao ul{
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 ul li::before{
     content: "→ ";
 
 }
-strong{
-    
+#pedido{
+    font-size: 25px;
+    list-style-type: none;
+}
+
+#ajuda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.missao a{
+    background-color:#294442;
+    padding: 10px;
+    width: 170px;
+    margin-top: 20px;
+    color: #fcf4e1;
+    border-radius: 6%;
+    box-shadow: 2px 2px 2px 2px #294442;
+    text-decoration: none;
+    font-size: larger;
+    letter-spacing: 2px;
+
+    transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+}
+
+.missao a:hover{
+    background-color: #376865;
+    transform: scale(1.05);
+
 }
 
 
@@ -246,6 +284,10 @@ footer {
 
 
 
+/* APOIO */
+
+
+/* HÓSPEDES */
 
 
 
