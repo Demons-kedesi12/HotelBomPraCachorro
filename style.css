@@ -172,44 +172,44 @@ main {
     width: 100%;
 }
 
-
 #sobre {
     min-height: 500px;
-
-    padding: 80px 8%;
-
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-
+    gap: 20px;
     justify-content: center;
     align-items: center;
-
     text-align: center;
 }
 
-.missao{
+.missao {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    align-items: center;
+    padding: 10px;
     gap: 40px;
     font-size: larger;
-    margin: 50px 0px;
+    margin: 30px 0;
+    width: 100%;
 }
 
-.missao ul{
+.missao ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     align-items: flex-start;
     gap: 10px;
-    
-    background: rgba(255, 255, 255, 0.15); /* Fundo branco bem transparente */
-    backdrop-filter: blur(12px);          /* Desfoque do fundo atrás da caixa */
-    -webkit-backdrop-filter: blur(12px);  /* Suporte para Safari/iPhone */
-    border-radius: 16px;                  /* Bordas arredondadas */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda fina semi-transparente */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25); /* Sombra suave */
+    background-color: #6fbeb9f6;
+    max-width: 650px;
+    width: 100%;      
+    padding: 30px;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.missao ul:hover{
+    background-color:#44a8a2;
 }
 
 ul li::before{
@@ -235,7 +235,7 @@ ul li::before{
     width: 170px;
     margin-top: 20px;
     color: #fcf4e1;
-    border-radius: 6%;
+    border-radius: 40px;
     box-shadow: 2px 2px 2px 2px #294442;
     text-decoration: none;
     font-size: larger;
@@ -294,8 +294,335 @@ footer {
 
 /* APOIO */
 
+#titulo-apoio{
+    text-align: center;
+    font-weight: 600;
+    font-size: 29px;
+    width: 20em;
+    margin-left: 22.9em;
+    margin-bottom: 50px;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+
+
+margin: 40px;
+}
+
+.cards a{
+    background-color: #6fbeb9f6;
+    text-decoration: none;
+    color: #325754;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: 3px 4px 4px 2px #294442;
+    padding: 40px;
+    letter-spacing: 2.5px;
+
+    
+}
+.card-conteudo img {
+    width: 250px;          
+    height: 200px;         
+    object-fit: cover;      
+    border-radius: 15px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.card-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+.cards a:hover{
+background-color: #44a8a2;
+}
+.card-conteudo p {
+    width: 16em;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.apoio-form-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    background-color: #fcf4e1;
+    color: #294442;
+    min-height: 100vh;
+}
+
+.apoio-form-page *,
+.apoio-form-page *::before,
+.apoio-form-page *::after {
+    box-sizing: border-box;
+}
+
+.apoio-form-page a {
+    color: inherit;
+}
+
+.apoio-form-header {
+    width: 100%;
+    background-color: #fcf4e1;
+    border-bottom: 3px solid #44a8a2;
+}
+
+.apoio-form-nav {
+    width: 100%;
+    min-height: 78px;
+    padding: 15px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.apoio-form-logo {
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.apoio-form-menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.apoio-form-menu-link {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.apoio-form-menu-link:hover {
+    color: #f66c52;
+}
+
+.apoio-form-main {
+    width: min(100% - 40px, 1050px);
+    margin: 0 auto;
+    padding: 55px 0 70px;
+}
+
+.apoio-form-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.apoio-form-titulo {
+    margin: 0 0 15px;
+    font-size: clamp(30px, 5vw, 46px);
+    color: #294442;
+}
+
+.apoio-form-subtitulo {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.apoio-form-card {
+    background-color: #ffffff;
+    border: 2px solid #6fbeb9;
+    border-radius: 25px;
+    padding: clamp(22px, 4vw, 40px);
+    box-shadow: 5px 6px 0 #376865;
+    margin-bottom: 30px;
+}
+
+.apoio-form-card-title {
+    margin: 0 0 22px;
+    font-size: 27px;
+    color: #294442;
+}
+
+.apoio-form-fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.apoio-form-legend {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.apoio-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.apoio-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.apoio-form-field-full {
+    grid-column: 1 / -1;
+}
+
+.apoio-form-label {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.apoio-form-input,
+.apoio-form-select,
+.apoio-form-textarea {
+    width: 100%;
+    border: 2px solid #b8d9d6;
+    border-radius: 12px;
+    padding: 13px 15px;
+    background-color: #fcf4e1;
+    color: #294442;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.apoio-form-input:focus,
+.apoio-form-select:focus,
+.apoio-form-textarea:focus {
+    border-color: #44a8a2;
+    box-shadow: 0 0 0 3px rgba(68, 168, 162, 0.15);
+}
+
+.apoio-form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.apoio-form-radio-group,
+.apoio-form-check-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    padding-top: 5px;
+}
+
+.apoio-form-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.apoio-form-option input {
+    accent-color: #44a8a2;
+}
+
+.apoio-form-info {
+    background-color: #d9efec;
+    border-left: 6px solid #44a8a2;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 25px;
+}
+
+.apoio-form-info-title {
+    margin: 0 0 8px;
+    font-size: 21px;
+}
+
+.apoio-form-info-text {
+    margin: 0;
+    line-height: 1.55;
+}
+
+.apoio-form-highlight {
+    background-color: #fff1ed;
+    border: 2px solid #f66c52;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.apoio-form-highlight-title {
+    margin: 0 0 10px;
+    color: #c84e3a;
+    font-size: 21px;
+}
+
+.apoio-form-highlight-value {
+    display: block;
+    word-break: break-word;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.apoio-form-submit {
+    display: inline-block;
+    border: 0;
+    border-radius: 35px;
+    padding: 15px 32px;
+    background-color: #294442;
+    color: #fcf4e1;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.apoio-form-submit:hover {
+    background-color: #f66c52;
+    transform: translateY(-2px);
+}
+
+.apoio-form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.apoio-form-back {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.apoio-form-back:hover {
+    color: #f66c52;
+}
+
+.apoio-form-footer {
+    min-height: 120px;
+    padding: 30px 20px;
+    background-color: #294442;
+    color: #fcf4e1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.apoio-form-footer-text {
+    margin: 0;
+}
+
 
 /* HÓSPEDES */
+
 
 
 
@@ -389,15 +716,6 @@ footer {
         gap: 30px;
     }
 
-    /* Cards interativos */
-  
-    .inicio h1:active {
-        background-color: #f66c52;
-    
-        color: #fcf4e1;
-    
-        transform: scale(1.05);
-    }
 
     .esquerda,
     .direita {
