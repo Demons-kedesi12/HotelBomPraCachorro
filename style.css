@@ -192,9 +192,9 @@ main {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    gap: 20px;
+    gap: 40px;
     font-size: larger;
-    margin: 30px 0px;
+    margin: 50px 0px;
 }
 
 .missao ul{
@@ -203,6 +203,13 @@ main {
     list-style-type: none;
     align-items: flex-start;
     gap: 10px;
+    
+    background: rgba(255, 255, 255, 0.15); /* Fundo branco bem transparente */
+    backdrop-filter: blur(12px);          /* Desfoque do fundo atrás da caixa */
+    -webkit-backdrop-filter: blur(12px);  /* Suporte para Safari/iPhone */
+    border-radius: 16px;                  /* Bordas arredondadas */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda fina semi-transparente */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25); /* Sombra suave */
 }
 
 ul li::before{
@@ -382,6 +389,15 @@ footer {
         gap: 30px;
     }
 
+    /* Cards interativos */
+  
+    .inicio h1:active {
+        background-color: #f66c52;
+    
+        color: #fcf4e1;
+    
+        transform: scale(1.05);
+    }
 
     .esquerda,
     .direita {
