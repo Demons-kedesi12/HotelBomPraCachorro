@@ -6,17 +6,16 @@
 html {
     scroll-behavior: smooth;
 }
-
-
 body {
     font-family: "Fredoka", sans-serif;
     background-color: #fcf4e1;
     color: #294442;
+    overflow-x: hidden;
 }
 
-/* PÁGINA INICIO E SOBRE E GERAIS */
+/* ----- PÁGINA INICIO E SOBRE E GERAIS ------ */
 
-/*HEADER*/
+/*header*/
 
 header {
     min-height: 100vh;
@@ -31,8 +30,7 @@ header {
 }
 
 
-/*NAV*/
-
+/*nav*/
 nav {
     position: sticky;
     top: 0;
@@ -53,8 +51,7 @@ nav {
 }
 
 
-/* LOGO / NOME */
-
+/* logo*/
 .logo {
     font-size: 24px;
     font-weight: 700;
@@ -65,14 +62,12 @@ nav {
 }
 
 
-/* MENU */
-
+/* menu */
 .menu {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-
 
 .menu a {
     color: #294442;
@@ -85,14 +80,12 @@ nav {
     transition: 0.5s;
 }
 
-
 .menu a:hover {
     color: #f66c52;
 }
 
 
-/*INICIO*/
-
+/*inicio*/
 .inicio {
     min-height: calc(100vh - 80px);
 
@@ -106,8 +99,7 @@ nav {
 }
 
 
-/*TEXTOS LATERAIS*/
-
+/*texto lateral*/
 .esquerda,
 .direita {
     width: 35%;
@@ -118,21 +110,18 @@ nav {
     gap: 40px;
 }
 
-
 .esquerda {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
 }
 
-
 .direita {
     align-items: flex-end;
 }
 
 
-/*FRASES*/
-
+/*frases*/
 .inicio h1 {
     width: min(400px, 100%);
 
@@ -156,7 +145,6 @@ nav {
         color 0.3s ease;
 }
 
-
 .inicio h1:hover {
     background-color: #f66c52;
 
@@ -166,8 +154,7 @@ nav {
 }
 
 
-/*MAIN*/
-
+/*main*/
 main {
     width: 100%;
 }
@@ -254,13 +241,11 @@ ul li::before{
 
 }
 
-
 main h2 {
     margin-bottom: 20px;
 
     font-size: clamp(28px, 4vw, 45px);
 }
-
 
 main p {
     max-width: 700px;
@@ -270,8 +255,7 @@ main p {
 }
 
 
-/*FOOTER*/
-
+/*footer*/
 footer {
     min-height: 120px;
 
@@ -292,24 +276,23 @@ footer {
 
 
 
-/* APOIO */
+/* ----- APOIO ----- */
 
 #titulo-apoio{
     text-align: center;
     font-weight: 600;
     font-size: 29px;
-    width: 20em;
-    margin-left: 22.9em;
-    margin-bottom: 50px;
+    width: min(90%, 20em);
+    margin: 0 auto 50px auto;
 }
 
 .cards{
     display: flex;
-    gap: 10px;
+    gap: 30px;
     justify-content: space-around;
+    flex-wrap: wrap;
 
-
-margin: 40px;
+    margin: 40px 20px;
 }
 
 .cards a{
@@ -319,9 +302,9 @@ margin: 40px;
     font-weight: 700;
     border-radius: 40px;
     box-shadow: 3px 4px 4px 2px #294442;
-    padding: 40px;
+    padding: 15px 30px;
     letter-spacing: 2.5px;
-
+    transition: background-color 0.3s ease;
     
 }
 .card-conteudo img {
@@ -345,412 +328,387 @@ background-color: #44a8a2;
 }
 .card-conteudo p {
     width: 16em;
+    max-width: 100%;
     text-align: center;
     letter-spacing: 1px;
 }
 
-.apoio-form-page {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Fredoka", sans-serif;
-    background-color: #fcf4e1;
-    color: #294442;
-    min-height: 100vh;
-}
 
-.apoio-form-page *,
-.apoio-form-page *::before,
-.apoio-form-page *::after {
-    box-sizing: border-box;
-}
 
-.apoio-form-page a {
-    color: inherit;
-}
+/* ----- HÓSPEDES ----- */
 
-.apoio-form-header {
-    width: 100%;
-    background-color: #fcf4e1;
-    border-bottom: 3px solid #44a8a2;
-}
-
-.apoio-form-nav {
-    width: 100%;
-    min-height: 78px;
-    padding: 15px 6%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-.apoio-form-logo {
-    font-size: 24px;
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-.apoio-form-menu {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.apoio-form-menu-link {
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.apoio-form-menu-link:hover {
-    color: #f66c52;
-}
-
-.apoio-form-main {
-    width: min(100% - 40px, 1050px);
-    margin: 0 auto;
-    padding: 55px 0 70px;
-}
-
-.apoio-form-intro {
+#titulo-cachorro{
     text-align: center;
-    margin-bottom: 35px;
+    font-weight: 600;
+    font-size: 29px;
+    width: min(90%, 20em);
+    margin: 0 auto 50px auto;
 }
 
-.apoio-form-titulo {
-    margin: 0 0 15px;
-    font-size: clamp(30px, 5vw, 46px);
-    color: #294442;
+.carrossel {
+    position: relative;
+    max-width: 80em;
+    min-height: 45em;
+    margin: 0 auto 100px;
+    background-color: #fcf4e1;
 }
 
-.apoio-form-subtitulo {
-    max-width: 720px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.6;
+.carrossel-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.apoio-form-card {
-    background-color: #ffffff;
-    border: 2px solid #6fbeb9;
-    border-radius: 25px;
-    padding: clamp(22px, 4vw, 40px);
-    box-shadow: 5px 6px 0 #376865;
-    margin-bottom: 30px;
+.slide {
+    display: none;
+    width: 100%;
+    min-height: 45em;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 70px 60px;
 }
 
-.apoio-form-card-title {
-    margin: 0 0 22px;
-    font-size: 27px;
-    color: #294442;
+.slide.ativo {
+    display: flex;
 }
 
-.apoio-form-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+.slide-texto {
+    flex: 1;
+    min-width: 0;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.apoio-form-legend {
-    font-size: 22px;
-    font-weight: 700;
+.slide-texto h2 {
+    width: 100%;
     margin-bottom: 20px;
-}
-
-.apoio-form-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-}
-
-.apoio-form-field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.apoio-form-field-full {
-    grid-column: 1 / -1;
-}
-
-.apoio-form-label {
-    font-size: 17px;
-    font-weight: 600;
-}
-
-.apoio-form-input,
-.apoio-form-select,
-.apoio-form-textarea {
-    width: 100%;
-    border: 2px solid #b8d9d6;
-    border-radius: 12px;
-    padding: 13px 15px;
-    background-color: #fcf4e1;
+    font-size: 40px;
     color: #294442;
-    font-family: inherit;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
+    text-align: center;
 }
 
-.apoio-form-input:focus,
-.apoio-form-select:focus,
-.apoio-form-textarea:focus {
-    border-color: #44a8a2;
-    box-shadow: 0 0 0 3px rgba(68, 168, 162, 0.15);
+.slide-texto p {
+    max-width: 100%;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #325754;
+    text-align: center;
 }
 
-.apoio-form-textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.apoio-form-radio-group,
-.apoio-form-check-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 22px;
-    padding-top: 5px;
-}
-
-.apoio-form-option {
+.slide-imagem {
+    flex: 1;
+    min-width: 0;
+    height: 680px;
+    padding: 100px;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 16px;
+    justify-content: center;
 }
 
-.apoio-form-option input {
-    accent-color: #44a8a2;
-}
-
-.apoio-form-info {
-    background-color: #d9efec;
-    border-left: 6px solid #44a8a2;
-    border-radius: 12px;
-    padding: 18px 20px;
-    margin-bottom: 25px;
-}
-
-.apoio-form-info-title {
-    margin: 0 0 8px;
-    font-size: 21px;
-}
-
-.apoio-form-info-text {
-    margin: 0;
-    line-height: 1.55;
-}
-
-.apoio-form-highlight {
-    background-color: #fff1ed;
-    border: 2px solid #f66c52;
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.apoio-form-highlight-title {
-    margin: 0 0 10px;
-    color: #c84e3a;
-    font-size: 21px;
-}
-
-.apoio-form-highlight-value {
+.slide-imagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px 2px #333333;
     display: block;
-    word-break: break-word;
-    font-size: 19px;
-    font-weight: 700;
+    object-fit: cover;
 }
 
-.apoio-form-submit {
-    display: inline-block;
-    border: 0;
-    border-radius: 35px;
-    padding: 15px 32px;
+.anterior,
+.proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
     background-color: #294442;
     color: #fcf4e1;
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-size: 20px;
     cursor: pointer;
-    transition: 0.3s;
+    z-index: 2;
 }
 
-.apoio-form-submit:hover {
-    background-color: #f66c52;
-    transform: translateY(-2px);
+.anterior {
+    left: 5px;
 }
 
-.apoio-form-actions {
+.proximo {
+    right: 5px;
+}
+
+.anterior:hover,
+.proximo:hover {
+    background-color: #376865;
+}
+
+.indicadores {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    gap: 12px;
+    z-index: 2;
 }
 
-.apoio-form-back {
-    display: inline-block;
-    margin-top: 25px;
-    text-decoration: none;
-    font-weight: 600;
+.indicador {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #bbbbbb;
+    cursor: pointer;
 }
 
-.apoio-form-back:hover {
-    color: #f66c52;
-}
-
-.apoio-form-footer {
-    min-height: 120px;
-    padding: 30px 20px;
+.indicador.ativo {
     background-color: #294442;
-    color: #fcf4e1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-}
-
-.apoio-form-footer-text {
-    margin: 0;
 }
 
 
-/* HÓSPEDES */
 
+/* RESPONSIVIDADE */
 
-
-
-/*---IPAD---*/
-
+/*--- TABLET ---*/
 @media (max-width: 1024px) {
 
     nav {
         padding: 15px 4%;
     }
 
-
     .menu {
         gap: 20px;
     }
-
 
     .menu a {
         font-size: 16px;
     }
 
-
     .inicio {
         gap: 20px;
-        padding: 50px 4%;
-        margin-top: -200px;
-
+        padding: 40px 4%;
     }
-
 
     .esquerda,
     .direita {
-        width: 32%;
+        width: 38%;
     }
 
-
     .inicio h1 {
-        padding: 25px;
+        padding: 22px;
+        font-size: 18px;
+    }
 
-        font-size: 20px;
+    #titulo-apoio,
+    #titulo-cachorro {
+        font-size: 24px;
+    }
+
+    .carrossel {
+        max-width: 95%;
+        min-height: auto;
+    }
+
+    .slide {
+        padding: 20px 50px 60px;
+        min-height: auto;
+    }
+
+    .slide-imagem {
+        height: 450px;
+        padding: 20px;
     }
 
 }
 
 
-/*---CELULAR---*/
-
+/*--- celulares  ---*/
 @media (max-width: 768px) {
 
     header {
         min-height: auto;
-
-        background-size: 80%;
+        background-size: clamp(180px, 50vw, 300px);
         background-position: center 100px;
     }
 
     nav {
-        min-height: 70px;
-
-        padding: 12px 20px;
-
+        min-height: auto;
+        padding: 15px;
         flex-direction: column;
-
-        gap: 10px;
+        gap: 12px;
     }
 
     .logo {
         font-size: 20px;
+        white-space: normal;
+        text-align: center;
     }
 
     .menu {
         width: 100%;
-
         justify-content: center;
-
-        gap: 15px;
+        flex-wrap: wrap;
+        gap: 12px 18px;
     }
 
     .menu a {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .inicio {
         min-height: auto;
-
         flex-direction: column;
-
-        padding: 400px 20px 60px;
-        margin-top: 70px;
-
-        gap: 30px;
+        padding: 260px 20px 40px;
+        gap: 25px;
     }
-
 
     .esquerda,
     .direita {
         width: 100%;
-
         align-items: center;
-
-        gap: 25px;
+        gap: 20px;
     }
-
 
     .inicio h1 {
         width: 100%;
-
-        max-width: 450px;
-
-        padding: 25px;
-
-        font-size: 19px;
+        max-width: 100%;
+        padding: 20px 15px;
+        font-size: 16px;
     }
 
-    #sobre{
-        min-height: 400px;
-
-        padding: 60px 25px;
+    #sobre {
+        min-height: auto;
+        padding: 40px 20px;
     }
-
 
     main p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .missao ul {
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    #pedido {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #titulo-apoio,
+    #titulo-cachorro {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        margin: 20px 10px;
+        gap: 30px;
+    }
+
+    .card-conteudo img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        aspect-ratio: 5/4;
     }
 
     footer {
         min-height: 100px;
+        padding: 20px 15px;
+        font-size: 14px;
     }
 
+    .carrossel {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 60px;
+    }
+
+    .slide {
+        flex-direction: column;
+        min-height: auto;
+        gap: 15px;
+        padding: 20px 15px 65px;
+    }
+
+    .slide-texto {
+        width: 100%;
+        flex: none;
+        margin: 10px 0;
+    }
+
+    .slide-texto h2 {
+        font-size: 24px;
+    }
+
+    .slide-texto p {
+        font-size: 15px;
+    }
+
+    .slide-imagem {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        padding: 0;
+    }
+
+    .anterior,
+    .proximo {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .anterior {
+        left: 2px;
+    }
+
+    .proximo {
+        right: 2px;
+    }
+
+    .indicadores {
+        bottom: 15px;
+    }
 }
 
+
+/*--- celulares pequenos ---*/
+@media (max-width: 380px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .inicio {
+        padding-top: 230px;
+    }
+
+    .inicio h1 {
+        font-size: 15px;
+        padding: 15px 10px;
+    }
+
+    .card-conteudo p {
+        font-size: 14px;
+    }
+}
