@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../apoio-formularios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>Apadrinhamento | Hotel Bom Pra Cachorro</title>
+</head>
+
+<body class="apoio-form-page">
+
+    <header class="apoio-form-header" id="padrinho-header">
+        <nav class="apoio-form-nav" id="padrinho-nav">
+            <div class="apoio-form-logo" id="padrinho-logo">Hotel Bom Pra Cachorro</div>
+
+            <div class="apoio-form-menu" id="padrinho-menu">
+                <a class="apoio-form-menu-link" id="padrinho-link-inicio" href="../index.html">Início</a>
+                <a class="apoio-form-menu-link" id="padrinho-link-apoio" href="../apoio.html">Ajude-nos</a>
+                <a class="apoio-form-menu-link" id="padrinho-link-hospedes" href="../cachorros.html">Nossos Hóspedes</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="apoio-form-main" id="padrinho-main">
+
+        <section class="apoio-form-intro" id="padrinho-intro">
+            <h1 class="apoio-form-titulo" id="padrinho-titulo">Seja um Padrinho ou Madrinha</h1>
+            <p class="apoio-form-subtitulo" id="padrinho-subtitulo">
+                Escolha acompanhar a jornada de um dos nossos hóspedes e ajude a garantir
+                seus cuidados enquanto ele espera por uma família.
+            </p>
+        </section>
+
+        <section class="apoio-form-card" id="padrinho-como-card">
+            <h2 class="apoio-form-card-title" id="padrinho-como-titulo">Como funciona?</h2>
+
+            <div class="apoio-form-info" id="padrinho-como-info">
+                <h3 class="apoio-form-info-title" id="padrinho-como-subtitulo">Seu Apoio Mensal</h3>
+                <p class="apoio-form-info-text" id="padrinho-como-texto">
+                    Você escolhe um cãozinho e contribui mensalmente com os custos de
+                    alimentação, cuidados veterinários e bem-estar dele.
+                </p>
+            </div>
+        </section>
+
+        <section class="apoio-form-card" id="padrinho-form-card">
+            <h2 class="apoio-form-card-title" id="padrinho-form-titulo">Formulário de apadrinhamento</h2>
+
+            <form class="apoio-form" id="padrinho-form" action="#" method="post">
+
+                <fieldset class="apoio-form-fieldset" id="padrinho-dados-fieldset">
+                    <legend class="apoio-form-legend" id="padrinho-dados-legend">Dados do padrinho ou madrinha</legend>
+
+                    <div class="apoio-form-grid" id="padrinho-dados-grid">
+
+                        <div class="apoio-form-field" id="padrinho-nome-field">
+                            <label class="apoio-form-label" id="padrinho-nome-label" for="padrinho-nome">Nome completo</label>
+                            <input class="apoio-form-input" id="padrinho-nome" name="nome" type="text" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="padrinho-email-field">
+                            <label class="apoio-form-label" id="padrinho-email-label" for="padrinho-email">E-mail</label>
+                            <input class="apoio-form-input" id="padrinho-email" name="email" type="email" placeholder="seuemail@email.com" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="padrinho-telefone-field">
+                            <label class="apoio-form-label" id="padrinho-telefone-label" for="padrinho-telefone">Telefone</label>
+                            <input class="apoio-form-input" id="padrinho-telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="padrinho-cao-field">
+                            <label class="apoio-form-label" id="padrinho-cao-label" for="padrinho-cao">Cãozinho que deseja apadrinhar</label>
+                            <select class="apoio-form-select" id="padrinho-cao" name="cao" required>
+                                <option value="">Selecione um hóspede</option>
+                                <option value="thor">Thor</option>
+                                <option value="mel">Mel</option>
+                                <option value="toby">Toby</option>
+                                <option value="luna">Luna</option>
+                                <option value="brisa">Brisa</option>
+
+                            </select>
+                        </div>
+
+                        <div class="apoio-form-field apoio-form-field-full" id="padrinho-valor-field">
+                            <label class="apoio-form-label" id="padrinho-valor-label">Valor mensal que pretende contribuir</label>
+
+                            <div class="apoio-form-radio-group" id="padrinho-valor-group">
+                                <label class="apoio-form-option" id="padrinho-valor-30">
+                                    <input type="radio" name="valor" value="30" required> R$ 30,00
+                                </label>
+
+                                <label class="apoio-form-option" id="padrinho-valor-50">
+                                    <input type="radio" name="valor" value="50"> R$ 50,00
+                                </label>
+
+                                <label class="apoio-form-option" id="padrinho-valor-100">
+                                    <input type="radio" name="valor" value="100"> R$ 100,00
+                                </label>
+
+                                <label class="apoio-form-option" id="padrinho-valor-outro">
+                                    <input type="radio" name="valor" value="outro"> Outro valor
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="apoio-form-field apoio-form-field-full" id="padrinho-pagamento-field">
+                            <label class="apoio-form-label" id="padrinho-pagamento-label" for="padrinho-pagamento">Forma de contribuição</label>
+                            <select class="apoio-form-select" id="padrinho-pagamento" name="pagamento" required>
+                                <option value="">Selecione</option>
+                                <option value="pix">PIX</option>
+                                <option value="transferencia">Transferência bancária</option>
+                            </select>
+                        </div>
+
+                        <div class="apoio-form-field apoio-form-field-full" id="padrinho-mensagem-field">
+                            <label class="apoio-form-label" id="padrinho-mensagem-label" for="padrinho-mensagem">Mensagem</label>
+                            <textarea class="apoio-form-textarea" id="padrinho-mensagem" name="mensagem" placeholder="Deixe uma mensagem para a equipe ou conte por que escolheu apadrinhar."></textarea>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <div class="apoio-form-actions" id="padrinho-actions">
+                    <button class="apoio-form-submit" id="padrinho-submit" type="submit">Quero ser Padrinho!</button>
+                </div>
+            </form>
+        </section>
+
+        <a class="apoio-form-back" id="padrinho-voltar" href="../apoio.html">← Voltar para Ajude-nos</a>
+    </main>
+
+    <footer class="apoio-form-footer" id="padrinho-footer">
+        <p class="apoio-form-footer-text" id="padrinho-footer-direitos">© Todos os direitos reservados por Hotel Bom Pra Cachorro</p>
+        <p class="apoio-form-footer-text" id="padrinho-footer-desenvolvido">Desenvolvido por Maria Palma</p>
+    </footer>
+
+</body>
+</html>

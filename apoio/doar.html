@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../apoio-formularios.css">
+    <title>Doação | Hotel Bom Pra Cachorro</title>
+</head>
+
+<body class="apoio-form-page">
+
+    <header class="apoio-form-header" id="doacao-header">
+        <nav class="apoio-form-nav" id="doacao-nav">
+            <div class="apoio-form-logo" id="doacao-logo">Hotel Bom Pra Cachorro</div>
+
+            <div class="apoio-form-menu" id="doacao-menu">
+                <a class="apoio-form-menu-link" id="doacao-link-inicio" href="../index.html">Início</a>
+                <a class="apoio-form-menu-link" id="doacao-link-apoio" href="../apoio.html">Ajude-nos</a>
+                <a class="apoio-form-menu-link" id="doacao-link-hospedes" href="../cachorros.html">Nossos Hóspedes</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="apoio-form-main" id="doacao-main">
+
+        <section class="apoio-form-intro" id="doacao-intro">
+            <h1 class="apoio-form-titulo" id="doacao-titulo">Faça uma doação</h1>
+            <p class="apoio-form-subtitulo" id="doacao-subtitulo">
+                Sua contribuição ajuda a manter alimentação, consultas veterinárias,
+                vacinas e tratamentos dos nossos hóspedes.
+            </p>
+        </section>
+
+        <section class="apoio-form-card" id="doacao-pix-card">
+            <h2 class="apoio-form-card-title" id="doacao-pix-titulo">Doação via PIX</h2>
+
+            <div class="apoio-form-info" id="doacao-pix-info">
+                <h3 class="apoio-form-info-title" id="doacao-pix-info-titulo">Chave PIX</h3>
+                <p class="apoio-form-info-text" id="doacao-pix-info-text">
+                    Você pode realizar a transferência diretamente para a chave abaixo.
+                </p>
+
+                <div class="apoio-form-highlight" id="doacao-pix-destaque">
+                    <h4 class="apoio-form-highlight-title" id="doacao-pix-destaque-titulo">Chave PIX da ONG</h4>
+                    <strong class="apoio-form-highlight-value" id="doacao-pix-chave">
+                        doacoes@hotelbompracachorro.org
+                    </strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="apoio-form-card" id="doacao-form-card">
+            <h2 class="apoio-form-card-title" id="doacao-form-titulo">Avise que Você Realizou uma Doação!</h2>
+
+            <form class="apoio-form" id="doacao-form" action="#" method="post">
+
+                <fieldset class="apoio-form-fieldset" id="doacao-dados-fieldset">
+                    <legend class="apoio-form-legend" id="doacao-dados-legend">Seus dados</legend>
+
+                    <div class="apoio-form-grid" id="doacao-dados-grid">
+
+                        <div class="apoio-form-field" id="doacao-nome-field">
+                            <label class="apoio-form-label" id="doacao-nome-label" for="doacao-nome">Nome completo</label>
+                            <input class="apoio-form-input" id="doacao-nome" name="nome" type="text" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="doacao-email-field">
+                            <label class="apoio-form-label" id="doacao-email-label" for="doacao-email">E-mail</label>
+                            <input class="apoio-form-input" id="doacao-email" name="email" type="email" placeholder="seuemail@email.com" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="doacao-valor-field">
+                            <label class="apoio-form-label" id="doacao-valor-label" for="doacao-valor">Valor doado</label>
+                            <input class="apoio-form-input" id="doacao-valor" name="valor" type="number" min="1" step="0.01" placeholder="Ex.: 50,00" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="doacao-data-field">
+                            <label class="apoio-form-label" id="doacao-data-label" for="doacao-data">Data da doação</label>
+                            <input class="apoio-form-input" id="doacao-data" name="data" type="date" required>
+                        </div>
+
+                        <div class="apoio-form-field apoio-form-field-full" id="doacao-observacao-field">
+                            <label class="apoio-form-label" id="doacao-observacao-label" for="doacao-observacao">Observação</label>
+                            <textarea class="apoio-form-textarea" id="doacao-observacao" name="observacao" placeholder="Se quiser, deixe uma mensagem para a ONG."></textarea>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <div class="apoio-form-actions" id="doacao-actions">
+                    <button class="apoio-form-submit" id="doacao-submit" type="submit">Enviar Confirmação!</button>
+                </div>
+            </form>
+        </section>
+
+        <a class="apoio-form-back" id="doacao-voltar" href="../apoio.html">← Voltar para Ajude-nos</a>
+    </main>
+
+    <footer class="apoio-form-footer" id="doacao-footer">
+        <p class="apoio-form-footer-text" id="doacao-footer-direitos">© Todos os direitos reservados por Hotel Bom Pra Cachorro</p>
+        <p class="apoio-form-footer-text" id="doacao-footer-desenvolvido">Desenvolvido por Maria Palma</p>
+    </footer>
+
+</body>
+</html>

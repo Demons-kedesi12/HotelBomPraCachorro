@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../apoio-formularios.css">
+    <title>Voluntariado | Hotel Bom Pra Cachorro</title>
+</head>
+
+<body class="apoio-form-page">
+
+    <header class="apoio-form-header" id="voluntario-header">
+        <nav class="apoio-form-nav" id="voluntario-nav">
+            <div class="apoio-form-logo" id="voluntario-logo">Hotel Bom Pra Cachorro</div>
+
+            <div class="apoio-form-menu" id="voluntario-menu">
+                <a class="apoio-form-menu-link" id="voluntario-link-inicio" href="../index.html">Início</a>
+                <a class="apoio-form-menu-link" id="voluntario-link-apoio" href="../apoio.html">Ajude-nos</a>
+                <a class="apoio-form-menu-link" id="voluntario-link-hospedes" href="../cachorros.html">Nossos Hóspedes</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="apoio-form-main" id="voluntario-main">
+
+        <section class="apoio-form-intro" id="voluntario-intro">
+            <h1 class="apoio-form-titulo" id="voluntario-titulo">Seja voluntário</h1>
+            <p class="apoio-form-subtitulo" id="voluntario-subtitulo">
+                Doe seu tempo, carinho e disposição para ajudar no dia a dia do hotel
+                e nas atividades com os nossos cães.
+            </p>
+        </section>
+
+        <section class="apoio-form-card" id="voluntario-info-card">
+            <h2 class="apoio-form-card-title" id="voluntario-info-titulo">Como você pode ajudar?</h2>
+
+            <div class="apoio-form-info" id="voluntario-info">
+                <h3 class="apoio-form-info-title" id="voluntario-info-subtitulo">Atividades disponíveis</h3>
+                <p class="apoio-form-info-text" id="voluntario-info-text">
+                    Passeios, banhos, organização dos espaços, apoio em eventos de adoção
+                    e cuidados gerais com os hóspedes.
+                </p>
+            </div>
+        </section>
+
+        <section class="apoio-form-card" id="voluntario-form-card">
+            <h2 class="apoio-form-card-title" id="voluntario-form-titulo">Formulário de Interesse</h2>
+
+            <form class="apoio-form" id="voluntario-form" action="#" method="post">
+
+                <fieldset class="apoio-form-fieldset" id="voluntario-dados-fieldset">
+                    <legend class="apoio-form-legend" id="voluntario-dados-legend">Seus dados</legend>
+
+                    <div class="apoio-form-grid" id="voluntario-dados-grid">
+
+                        <div class="apoio-form-field" id="voluntario-nome-field">
+                            <label class="apoio-form-label" id="voluntario-nome-label" for="voluntario-nome">Nome completo</label>
+                            <input class="apoio-form-input" id="voluntario-nome" name="nome" type="text" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="voluntario-email-field">
+                            <label class="apoio-form-label" id="voluntario-email-label" for="voluntario-email">E-mail</label>
+                            <input class="apoio-form-input" id="voluntario-email" name="email" type="email" placeholder="seuemail@email.com" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="voluntario-telefone-field">
+                            <label class="apoio-form-label" id="voluntario-telefone-label" for="voluntario-telefone">Telefone</label>
+                            <input class="apoio-form-input" id="voluntario-telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+                        </div>
+
+                        <div class="apoio-form-field" id="voluntario-disponibilidade-field">
+                            <label class="apoio-form-label" id="voluntario-disponibilidade-label" for="voluntario-disponibilidade">Disponibilidade</label>
+                            <select class="apoio-form-select" id="voluntario-disponibilidade" name="disponibilidade" required>
+                                <option value="">Selecione</option>
+                                <option value="manha">Manhã</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noite">Noite</option>
+                                <option value="flexivel">Horário flexível</option>
+                            </select>
+                        </div>
+
+                        <div class="apoio-form-field apoio-form-field-full" id="voluntario-atividade-field">
+                            <label class="apoio-form-label" id="voluntario-atividade-label">Em quais atividades você gostaria de ajudar?</label>
+
+                            <div class="apoio-form-check-group" id="voluntario-atividade-group">
+                                <label class="apoio-form-option" id="voluntario-opcao-passeio">
+                                    <input type="checkbox" name="atividade" value="passeios"> Passeios
+                                </label>
+
+                                <label class="apoio-form-option" id="voluntario-opcao-banho">
+                                    <input type="checkbox" name="atividade" value="banhos"> Banhos
+                                </label>
+
+                                <label class="apoio-form-option" id="voluntario-opcao-eventos">
+                                    <input type="checkbox" name="atividade" value="eventos"> Eventos de adoção
+                                </label>
+
+                                <label class="apoio-form-option" id="voluntario-opcao-organizacao">
+                                    <input type="checkbox" name="atividade" value="organizacao"> Organização
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="apoio-form-field apoio-form-field-full" id="voluntario-experiencia-field">
+                            <label class="apoio-form-label" id="voluntario-experiencia-label" for="voluntario-experiencia">Conte um pouco sobre você</label>
+                            <textarea class="apoio-form-textarea" id="voluntario-experiencia" name="experiencia" placeholder="Você já trabalhou ou teve contato com animais?"></textarea>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <div class="apoio-form-actions" id="voluntario-actions">
+                    <button class="apoio-form-submit" id="voluntario-submit" type="submit">Quero ser Voluntário!</button>
+                </div>
+            </form>
+        </section>
+
+        <a class="apoio-form-back" id="voluntario-voltar" href="../apoio.html">← Voltar para Ajude-nos</a>
+    </main>
+
+    <footer class="apoio-form-footer" id="voluntario-footer">
+        <p class="apoio-form-footer-text" id="voluntario-footer-direitos">© Todos os direitos reservados por Hotel Bom Pra Cachorro</p>
+        <p class="apoio-form-footer-text" id="voluntario-footer-desenvolvido">Desenvolvido por Maria Palma</p>
+    </footer>
+
+</body>
+</html>
