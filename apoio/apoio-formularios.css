@@ -1,7 +1,6 @@
+/* FORMULÁRIOS */
 
-   /* FORMULÁRIOS - HOTEL BOM PRA CACHORRO */
-  
-.apoio-form-page {
+.pagina-formulario {
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -10,15 +9,15 @@
     font-family: "Fredoka", sans-serif;
 }
 
-.apoio-form-page *,
-.apoio-form-page *::before,
-.apoio-form-page *::after {
+.pagina-formulario *,
+.pagina-formulario *::before,
+.pagina-formulario *::after {
     box-sizing: border-box;
 }
 
-/* header */
+/* Cabeçalho */
 
-.apoio-form-page .apoio-form-header {
+.pagina-formulario .cabecalho {
     width: 100%;
     min-height: 0;
     margin: 0;
@@ -28,7 +27,7 @@
     border-bottom: 3px solid #44a8a2;
 }
 
-.apoio-form-page .apoio-form-nav {
+.pagina-formulario .navegacao {
     width: 100%;
     min-height: 78px;
     margin: 0;
@@ -41,7 +40,7 @@
     box-shadow: none;
 }
 
-.apoio-form-page .apoio-form-logo {
+.pagina-formulario .logo {
     margin: 0;
     padding: 0;
     color: #294442;
@@ -50,7 +49,7 @@
     white-space: nowrap;
 }
 
-.apoio-form-page .apoio-form-menu {
+.pagina-formulario .menu {
     margin: 0;
     padding: 0;
     display: flex;
@@ -60,7 +59,7 @@
     flex-wrap: wrap;
 }
 
-.apoio-form-page .apoio-form-menu-link {
+.pagina-formulario .link-menu {
     margin: 0;
     padding: 0;
     color: #294442;
@@ -70,26 +69,26 @@
     transition: color 0.3s ease;
 }
 
-.apoio-form-page .apoio-form-menu-link:hover {
+.pagina-formulario .link-menu:hover {
     color: #f66c52;
 }
 
-/* conteúdo */
+/* Conteúdo Principal */
 
-.apoio-form-page .apoio-form-main {
+.pagina-formulario .conteudo-principal {
     width: min(1050px, calc(100% - 40px));
     margin: 0 auto;
     padding: 55px 0 70px;
 }
 
-.apoio-form-page .apoio-form-intro {
+.pagina-formulario .introducao {
     width: 100%;
     margin: 0 0 35px;
     padding: 0;
     text-align: center;
 }
 
-.apoio-form-page .apoio-form-titulo {
+.pagina-formulario .titulo-principal {
     width: 100%;
     margin: 0 0 15px;
     padding: 0;
@@ -102,7 +101,7 @@
     text-align: center;
 }
 
-.apoio-form-page .apoio-form-subtitulo {
+.pagina-formulario .subtitulo-principal {
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
@@ -112,9 +111,9 @@
     text-align: center;
 }
 
-/* caixas */
+/* Caixas / Cartões */
 
-.apoio-form-page .apoio-form-card {
+.pagina-formulario .cartao {
     width: 100%;
     margin: 0 0 30px;
     padding: clamp(22px, 4vw, 40px);
@@ -124,7 +123,7 @@
     box-shadow: 5px 6px 0 #376865;
 }
 
-.apoio-form-page .apoio-form-card-title {
+.pagina-formulario .titulo-cartao {
     width: 100%;
     margin: 0 0 22px;
     padding: 0;
@@ -133,7 +132,7 @@
     line-height: 1.25;
 }
 
-.apoio-form-page .apoio-form-info {
+.pagina-formulario .caixa-info {
     width: 100%;
     margin: 0 0 25px;
     padding: 18px 20px;
@@ -142,13 +141,13 @@
     border-radius: 12px;
 }
 
-.apoio-form-page .apoio-form-info-title {
+.pagina-formulario .titulo-info {
     margin: 0 0 8px;
     padding: 0;
     font-size: 21px;
 }
 
-.apoio-form-page .apoio-form-info-text {
+.pagina-formulario .texto-info {
     margin: 0;
     padding: 0;
     max-width: none;
@@ -156,23 +155,23 @@
     line-height: 1.55;
 }
 
-.apoio-form-page .apoio-form-highlight {
+.pagina-formulario .caixa-destaque {
     width: 100%;
     margin: 20px 0 0;
     padding: 20px;
-    background-color: #fff1ed;
-    border: 2px solid #f66c52;
+    background-color: #c3e5eb;
+    border: 2px solid #4499a8;
     border-radius: 15px;
 }
 
-.apoio-form-page .apoio-form-highlight-title {
+.pagina-formulario .titulo-destaque {
     margin: 0 0 10px;
     padding: 0;
-    color: #c84e3a;
+    color: #418a97;
     font-size: 21px;
 }
 
-.apoio-form-page .apoio-form-highlight-value {
+.pagina-formulario .valor-destaque {
     display: block;
     margin: 0;
     padding: 0;
@@ -181,22 +180,22 @@
     word-break: break-word;
 }
 
-/* formulário */
+/* Formulário */
 
-.apoio-form-page .apoio-form {
+.pagina-formulario .formulario {
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.apoio-form-page .apoio-form-fieldset {
+.pagina-formulario .grupo-campos {
     width: 100%;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-.apoio-form-page .apoio-form-legend {
+.pagina-formulario .titulo-grupo {
     width: 100%;
     margin: 0 0 20px;
     padding: 0;
@@ -205,7 +204,7 @@
     font-weight: 700;
 }
 
-.apoio-form-page .apoio-form-grid {
+.pagina-formulario .grade-campos {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -214,7 +213,7 @@
     gap: 20px;
 }
 
-.apoio-form-page .apoio-form-field {
+.pagina-formulario .campo {
     width: 100%;
     min-width: 0;
     margin: 0;
@@ -224,11 +223,11 @@
     gap: 8px;
 }
 
-.apoio-form-page .apoio-form-field-full {
+.pagina-formulario .campo-largura-total {
     grid-column: 1 / -1;
 }
 
-.apoio-form-page .apoio-form-label {
+.pagina-formulario .rotulo {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -238,9 +237,9 @@
     line-height: 1.3;
 }
 
-.apoio-form-page .apoio-form-input,
-.apoio-form-page .apoio-form-select,
-.apoio-form-page .apoio-form-textarea {
+.pagina-formulario .campo-texto,
+.pagina-formulario .campo-selecao,
+.pagina-formulario .caixa-texto {
     width: 100%;
     margin: 0;
     padding: 13px 15px;
@@ -254,22 +253,22 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.apoio-form-page .apoio-form-input:focus,
-.apoio-form-page .apoio-form-select:focus,
-.apoio-form-page .apoio-form-textarea:focus {
+.pagina-formulario .campo-texto:focus,
+.pagina-formulario .campo-selecao:focus,
+.pagina-formulario .caixa-texto:focus {
     border-color: #44a8a2;
     box-shadow: 0 0 0 3px rgba(68, 168, 162, 0.15);
 }
 
-.apoio-form-page .apoio-form-textarea {
+.pagina-formulario .caixa-texto {
     min-height: 120px;
     resize: vertical;
 }
 
-/* opções */
+/* Opções (Radio e Checkbox) */
 
-.apoio-form-page .apoio-form-radio-group,
-.apoio-form-page .apoio-form-check-group {
+.pagina-formulario .grupo-radio,
+.pagina-formulario .grupo-checkbox {
     width: 100%;
     margin: 0;
     padding: 5px 0 0;
@@ -279,7 +278,7 @@
     gap: 12px 22px;
 }
 
-.apoio-form-page .apoio-form-option {
+.pagina-formulario .opcao {
     width: auto;
     margin: 0;
     padding: 0;
@@ -291,14 +290,14 @@
     font-weight: 400;
 }
 
-.apoio-form-page .apoio-form-option input {
+.pagina-formulario .opcao input {
     margin: 0;
     accent-color: #44a8a2;
 }
 
-/* botão */
+/* Botões e Ações */
 
-.apoio-form-page .apoio-form-actions {
+.pagina-formulario .acoes-formulario {
     width: 100%;
     margin: 30px 0 0;
     padding: 0;
@@ -306,7 +305,7 @@
     justify-content: center;
 }
 
-.apoio-form-page .apoio-form-submit {
+.pagina-formulario .botao-enviar {
     display: inline-block;
     margin: 0;
     padding: 15px 32px;
@@ -322,14 +321,14 @@
     transition: 0.3s ease;
 }
 
-.apoio-form-page .apoio-form-submit:hover {
+.pagina-formulario .botao-enviar:hover {
     background-color: #f66c52;
     transform: translateY(-2px);
 }
 
-/* voltar */
+/* Link Voltar */
 
-.apoio-form-page .apoio-form-back {
+.pagina-formulario .link-voltar {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -338,13 +337,13 @@
     font-weight: 600;
 }
 
-.apoio-form-page .apoio-form-back:hover {
+.pagina-formulario .link-voltar:hover {
     color: #f66c52;
 }
 
-/* footer */
+/* Rodapé */
 
-.apoio-form-page .apoio-form-footer {
+.pagina-formulario .rodape {
     width: 100%;
     min-height: 120px;
     margin: 0;
@@ -359,18 +358,18 @@
     gap: 8px;
 }
 
-.apoio-form-page .apoio-form-footer-text {
+.pagina-formulario .texto-rodape {
     margin: 0;
     padding: 0;
     color: #fcf4e1;
     font-size: 16px;
 }
 
-/* tablet */
+/* Responsividade - Tablet */
 
 @media (max-width: 768px) {
 
-    .apoio-form-page .apoio-form-nav {
+    .pagina-formulario .navegacao {
         min-height: 70px;
         padding: 15px 20px;
         flex-direction: column;
@@ -378,81 +377,81 @@
         gap: 12px;
     }
 
-    .apoio-form-page .apoio-form-logo {
+    .pagina-formulario .logo {
         font-size: 20px;
         text-align: center;
     }
 
-    .apoio-form-page .apoio-form-menu {
+    .pagina-formulario .menu {
         width: 100%;
         justify-content: center;
         gap: 15px;
     }
 
-    .apoio-form-page .apoio-form-menu-link {
+    .pagina-formulario .link-menu {
         font-size: 14px;
     }
 
-    .apoio-form-page .apoio-form-main {
+    .pagina-formulario .conteudo-principal {
         width: calc(100% - 30px);
         padding: 40px 0 50px;
     }
 
-    .apoio-form-page .apoio-form-titulo {
+    .pagina-formulario .titulo-principal {
         font-size: clamp(28px, 9vw, 38px);
     }
 
-    .apoio-form-page .apoio-form-subtitulo {
+    .pagina-formulario .subtitulo-principal {
         font-size: 17px;
     }
 
-    .apoio-form-page .apoio-form-grid {
+    .pagina-formulario .grade-campos {
         grid-template-columns: 1fr;
         gap: 18px;
     }
 
-    .apoio-form-page .apoio-form-field-full {
+    .pagina-formulario .campo-largura-total {
         grid-column: auto;
     }
 
-    .apoio-form-page .apoio-form-card {
+    .pagina-formulario .cartao {
         padding: 25px 20px;
         border-radius: 20px;
     }
 
-    .apoio-form-page .apoio-form-card-title {
+    .pagina-formulario .titulo-cartao {
         font-size: 24px;
     }
 }
 
-/* meu celular */
+/* Responsividade - Celular */
 
 @media (max-width: 480px) {
 
-    .apoio-form-page .apoio-form-main {
+    .pagina-formulario .conteudo-principal {
         width: calc(100% - 20px);
         padding-top: 30px;
     }
 
-    .apoio-form-page .apoio-form-menu {
+    .pagina-formulario .menu {
         gap: 10px;
     }
 
-    .apoio-form-page .apoio-form-menu-link {
+    .pagina-formulario .link-menu {
         font-size: 13px;
     }
 
-    .apoio-form-page .apoio-form-card {
+    .pagina-formulario .cartao {
         padding: 20px 15px;
     }
 
-    .apoio-form-page .apoio-form-input,
-    .apoio-form-page .apoio-form-select,
-    .apoio-form-page .apoio-form-textarea {
+    .pagina-formulario .campo-texto,
+    .pagina-formulario .campo-selecao,
+    .pagina-formulario .caixa-texto {
         font-size: 15px;
     }
 
-    .apoio-form-page .apoio-form-submit {
+    .pagina-formulario .botao-enviar {
         width: 100%;
         padding: 14px 20px;
     }
